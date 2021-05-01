@@ -77,7 +77,7 @@ function updateCount(food){
     else if (food == "Kiwi"){
         count += 42
     }
-    else if (food == "Bread"){
+    else if (food == "Sliced bread"){
         count += 82
     }
     else if (food == "Cucumber"){
@@ -131,7 +131,7 @@ function updateCount(food){
     else if (food=="Pizza"){
        count += 300
     }
-    else if (food=="Cookie"){
+    else if (food=="Chocolate chip cookie"){
         count += 81
     }
     else if (food=="Pasta"){
@@ -167,6 +167,124 @@ function updateCount(food){
     else if (food=="Leek"){
         count += 54
     }
+    else if (food=="Cheeseburger"){
+        count += 300
+    }
+    else if (food=="Yogurt"){
+        count += 61
+    }
+    else if (food=="Walnut"){
+        count += 14
+    }
+    else if (food=="Beer"){
+        count += 154
+    }
+    else if (food=="Cauliflower"){
+        count += 145
+    }
+    else if (food=="Croissant"){
+        count += 250
+    }
+    else if (food=="Radish"){
+        count += 1
+    }
+    else if (food=="Omelette"){
+        count += 94
+    }
+    else if (food=="Melon"){
+        count += 23
+    }
+    else if (food=="Margarita"){
+        count += 300
+    }
+    else if (food=="Guava"){
+        count += 38
+    }
+    else if (food=="Dosa"){
+        count += 165
+    }
+    else if (food=="Bacon"){
+        count += 43
+    }
+    else if (food=="Salsa"){
+        count += 38
+    }
+    else if (food=="Toast"){
+        count += 75
+    }
+    else if (food=="Oatmeal"){
+        count += 288
+    }
+    else if (food=="Meatball"){
+        count += 135
+    }
+    else if (food=="Chocholate milk"){
+        count += 210
+    }
+    else if (food=="Spinach"){
+        count += 7
+    }
+    else if (food=="Pepperoni"){
+        count += 10
+    }
+    else if (food=="Ginger ale"){
+        count += 124
+    }
+    else if (food=="Pretzel"){
+        count += 108
+    }
+    else if (food=="Pancake"){
+        count += 175
+    }
+    else if (food=="Waffle"){
+        count += 218
+    }
+    else if (food=="Sour cream"){
+        count += 23
+    }
+    else if (food=="Milkshake"){
+        count += 350
+    }
+    else if (food=="Oreo"){
+        count += 53
+    }
+    else if (food=="Green tea"){
+        count += 2.5
+    }
+    else if (food=="Cheese"){
+        count += 83
+    }
+    else if (food=="Pie"){
+        count += 277
+    }
+    else if (food=="Peanut butter"){
+        count += 188
+    }
+    else if (food=="Marshmallow"){
+        count += 23
+    }
+    else if (food=="Starfruit"){
+        count += 28
+    }
+    else if (food=="Sausage"){
+        count += 258
+    }
+    else if (food=="Chicken breast"){
+        count += 92
+    }
+    else if (food=="Jackfruit"){
+        count += 157
+    }
+    else if (food=="Coca-cola"){
+        count += 140
+    }
+    else if (food=="Cereal"){
+        count += 150
+    }
+    else if (food=="Swiss roll"){
+        count += 270
+    }
+
 
 
 

@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SnapCal</title>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
+    <header>
+        <h1>SnapCal</h1>
+        <nav>
+            <ul>
+            <li class="nav__links"><a href="#">Calorie Count: </a></li>
+            <li class="nav__links"><a href="#"></a></li>            
+            </ul>
+        </nav>
+        <a href="#"><button>Reset</button></a>
+    </header>
+    <script type="text/JavaScript">
+        window.addEventListener("scroll" ,function() {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
     <input type = "file" allow = "/image">
 </body>
 </html>

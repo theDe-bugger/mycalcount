@@ -74,6 +74,100 @@ function updateCount(food){
     else if (food == "Apple"){
         count += 52
     }
+    else if (food == "Kiwi"){
+        count += 42
+    }
+    else if (food == "Bread"){
+        count += 82
+    }
+    else if (food == "Cucumber"){
+        count += 31
+    }
+    else if (food == "Tomato"){
+        count += 33
+    }
+    else if (food == "Pepper"){
+        count += 30
+    }
+    else if (food == "Carrot"){
+        count += 41
+    }
+    else if (food=="Broccoli"){
+        count += 44
+    }
+    else if (food=="Avacado"){
+        count += 227
+    }
+    else if (food=="Milk"){
+        count += 125
+    }
+    else if (food=="Egg"){
+        count += 72
+    }
+    else if (food=="Banana"){
+        count += 105
+    }
+    else if (food=="Strawberry"){
+        count += 5
+    } 
+    else if (food=="Almond"){
+        count += 7
+    }
+    else if (food=="Pear"){
+        count += 178
+    }
+    else if (food=="Raspberry"){
+        count += 1
+    }
+    else if (food=="Blackberry"){
+        count += 2
+    }
+    else if (food=="Potato"){
+        count += 135
+    }
+    else if (food=="Burger"){
+        count += 600
+    }
+    else if (food=="Pizza"){
+       count += 300
+    }
+    else if (food=="Cookie"){
+        count += 81
+    }
+    else if (food=="Pasta"){
+       count += 330
+    }
+    else if (food=="Cake"){
+        count += 355
+    }
+    else if (food=="Bagel"){
+        count += 245
+    }
+    else if (food=="Doughnut"){
+        count += 275
+    }
+    else if (food=="Rice"){
+        count += 300
+    }
+    else if (food=="Beans"){
+        count += 424
+    }
+    else if (food=="Zucchini"){
+        count += 62
+    }
+    else if (food=="Squash"){
+       count += 39
+    }
+    else if (food=="Salad"){
+      count += 255
+    }
+    else if (food=="Popcorn"){
+        count += 44
+    }
+
+
+
+
 
     document.getElementById("count").innerHTML = count
 }

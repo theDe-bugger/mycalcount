@@ -30,7 +30,7 @@ fetch('https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBkKPvGy2_fdq_G
 .then(data => {
   console.log('Success:', data);
   localStorage.setItem("output",JSON.stringify(data));
-  updateCount();
+  checkFood();
 })
 .catch((error) => {
   console.error('Error:', error);
@@ -38,28 +38,7 @@ fetch('https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBkKPvGy2_fdq_G
 });
 }
 
-function test(){
-    testData = {
-        "requests": [
-          {
-            "features": [
-              {
-                "maxResults": 5,
-                "type": "LABEL_DETECTION"
-              }
-            ],
-            "image": {
-              "source": {
-                "imageUri": "gs://cloud-samples-data/vision/label/setagaya.jpeg"
-              }
-            }
-          }
-        ]
-      }
-    alert(JSON.stringify(testData.requests[0].features[0].type))
-}
-
-function updateCount(){
+function checkFood(){
     possibleFoods = ["Clementine","Orange","Apple","Kiwi","Bread","Cucumber","Tomato","Pepper","Carrot","Broccoli","Avacado","Milk","Egg","Banana","Strawberry","Almond","Pear","Peach","Raspberry","Blackerry","Carrot","Potato","Burger","Pizza","Cookie","Pasta","Cake","Icecream","Bagel","Doughnut"]
     output = JSON.parse(localStorage.getItem("output"))
     alert(output)
@@ -70,6 +49,7 @@ function updateCount(){
         if (possibleFoods.includes(food)){
             alert("Your food is: " + JSON.stringify(food))
             check = true;
+            updateCount(food)
             break;
         } else {
             check = false;
@@ -78,4 +58,22 @@ function updateCount(){
     if (check == false){
     alert("This image does not contain any registered foods.")
     }
+}
+
+function updateCount(food){
+    var count = parseInt(document.getElementById("count").innerHTML)
+    if (food == "Clementine"){
+        count += 35
+    }
+    else if (food == "Orange"){
+        count += 62
+    }
+    else if (food == "Peach"){
+        count += 67
+    }
+    else if (food == "Apple"){
+        count += 52
+    }
+
+    document.getElementById("count").innerHTML = count
 }

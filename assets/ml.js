@@ -39,7 +39,7 @@ fetch('https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBkKPvGy2_fdq_G
 }
 
 function checkFood(){
-    possibleFoods = ["Clementine","Orange","Apple","Kiwi","Bread","Cucumber","Tomato","Pepper","Carrot","Broccoli","Avacado","Milk","Egg","Banana","Strawberry","Almond","Pear","Peach","Raspberry","Blackerry","Carrot","Potato","Burger","Pizza","Cookie","Pasta","Cake","Icecream","Bagel","Doughnut"]
+    possibleFoods = ["Clementine","Orange","Apple","Kiwi","Bread","Cucumber","Tomato","Pepper","Carrot","Broccoli","Avacado","Milk","Egg","Banana","Strawberry","Almond","Pear","Peach","Raspberry","Blackerry","Carrot","Potato","Burger","Pizza","Cookie","Pasta","Cake","Icecream","Bagel","Doughnut","Rice","Beans","Zucchini","Squash","Salad","Popcorn","Cheeseburger","Yogurt","Walnut","Beer","Cauliflower","Croissant","Croissant","Radish","Omlette","Melon","Margarita","Guava","Dosa","Bacon","Salsa","Toast","Oatmeal","Meatball","Chocolate milk","Spinach","Pepperoni","Ginger ale","Pretzel","Pancake","Waffle","Sour cream","Milkshake","Oreo","Green tea","Cheese","Pie","Peanut butter","Marshmallow","Starfruit","Sausage","Chicken breast","Jackfruit","Coca-cola","Cereal","Swiss roll"]
     output = JSON.parse(localStorage.getItem("output"))
     alert(output)
     check = false

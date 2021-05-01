@@ -27,6 +27,15 @@ navigator.mediaDevices.getUserMedia(constraints)
 function uploadImage(message){
   const ref = firebase.storage().ref()
   const name = 'input-file'
+// Data URL string
+	ref.child(name).putString(message, 'data_url').then(snapshot => snapshot.ref.getDownloadURL())
+  	.then(url=>{
+	var link = (sessionStorage.getItem("link"));
+  	link = url;
+  	localStorage.setItem("link",JSON.stringify(link));
+    const data = {
+      "requests": [
+        {
           "features": [
             {
               "maxResults": 5,

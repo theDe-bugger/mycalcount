@@ -162,7 +162,7 @@ function updateCount(food){
       count += 255
     }
     else if (food=="Popcorn"){
-        count += 44
+        count += 515
     }
     else if (food=="Leek"){
         count += 54

@@ -38,6 +38,44 @@ fetch('https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBkKPvGy2_fdq_G
 });
 }
 
-function updateCount(){
+function test(){
+    testData = {
+        "requests": [
+          {
+            "features": [
+              {
+                "maxResults": 5,
+                "type": "LABEL_DETECTION"
+              }
+            ],
+            "image": {
+              "source": {
+                "imageUri": "gs://cloud-samples-data/vision/label/setagaya.jpeg"
+              }
+            }
+          }
+        ]
+      }
+    alert(JSON.stringify(testData.requests[0].features[0].type))
+}
 
+function updateCount(){
+    possibleFoods = ["Clementine","Orange","Apple","Kiwi","Bread","Cucumber","Tomato","Pepper","Carrot","Broccoli","Avacado","Milk","Egg","Banana","Strawberry","Almond","Pear","Peach","Raspberry","Blackerry","Carrot","Potato","Burger","Pizza","Cookie","Pasta","Cake","Icecream","Bagel","Doughnut"]
+    output = JSON.parse(localStorage.getItem("output"))
+    alert(output)
+    check = false
+    for (var i=0;i<output.responses[0].labelAnnotations.length;i++){
+        food = output.responses[0].labelAnnotations[i].description
+        alert(JSON.stringify(food))
+        if (possibleFoods.includes(food)){
+            alert("Your food is: " + JSON.stringify(food))
+            check = true;
+            break;
+        } else {
+            check = false;
+        }
+    }
+    if (check == false){
+    alert("This image does not contain any registered foods.")
+    }
 }

@@ -13,24 +13,31 @@
 <body onload="takePic()">
     <header>
         <h1>MyCalCount</h1>
+        
+        
         <nav>
             <ul>
-            <li class="nav__links"><a href="#">Calorie Count: </a></li>
+            <li class="nav__links"><button id="capture">Capture Image</button></li>
+            <li class="nav__links"><button>Reset Calories</button></li>
+            <li class="nav__links"><a href="#">Daily Calorie Count: </a></li>
             <li class="nav__links"><a href="#"></a></li>            
             </ul>
         </nav>
-        <a href="#"><button>Reset</button></a>
+        <a href="#"></a>
     </header>
     <div id = "imagesection">
         <div id ="row">
 
-        <h2>Your Camera:</h2>
-        <video id="player" height="50%" width = "60%"controls autoplay></video>
-        <h2>Your Image: </h2>
-        <canvas id="canvas" width=320 height=240></canvas>
+        <h2>Your Camera:</h2><video id="player" height="50%" width = "50%"controls autoplay></video>
         </div>
+    </div>
+    <div id = "outputsection">
+        <div id ="row">
+        <h2>Your Image: </h2><canvas id="canvas" width=320 height=240 class = "imageTaken"></canvas>
+        </div>
+        
         <div class = "row">
-        <button id="capture">Capture</button>
+        
         
         </div>
     </div>

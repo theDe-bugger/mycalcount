@@ -193,7 +193,7 @@ HOME SECTION
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,.8);
+	background: rgba(0,0,0,.4);
 }
 
 .home-content {
@@ -247,7 +247,7 @@ HOME SECTION
 }
 
 .home-content .btn-primary {
-	background-color: #00c7fc;
+	background-color: #000000;
 }
 
 .home-content .btn-primary:hover,
@@ -258,8 +258,8 @@ HOME SECTION
 .home-content .btn-primary:active:focus, 
 .home-content .btn-primary:active:hover {
 	background: #ffffff;
-	color: #00c7fc;
-	border-color: #00c7fc;
+	color: #000000;
+	border-color: #000000;
 }
 
 .down-icon {
@@ -355,6 +355,7 @@ SERVICES SECTION
 	background: #ffffff;
 	padding: 58px 61px 98px;
 	text-align: center;
+	height: 100%;
 }
 
 .service .separator {

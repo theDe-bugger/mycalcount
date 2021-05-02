@@ -47,7 +47,7 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand smoothScroll" href="#home">
-		        <img alt="Modus" src="assets/images/banner.png">
+		        <img alt="Modus" src="assets/images/banner.png" >
 		      </a>
 		    </div>
 
@@ -87,7 +87,7 @@
 
 								<button id="capture" class = "btn btn-primary">Capture Image</button>
 								<button onclick= "reset()"class="btn btn-primary">Reset Calories</button>
-									<h2>Your Image: </h2><canvas id="canvas" width=320 height=240 class = "imageTaken"></canvas>
+								<h2>Your Image: </h2>
 							</div>
 							
 						</div>
@@ -102,9 +102,6 @@
 
 
 		<section id="services">
-
-			<!-- Section title -->
-			<h1 class="sr-only">Services section</h1>
 			
 			<div class="container">
 				
@@ -113,8 +110,8 @@
 					<div class="col-md-4">
 						
 						<div class="service">
-							<figure>
-								<img src="https://img.icons8.com/carbon-copy/2x/camera.png" alt="Camera">
+							<figure class ="justify-content-center">
+								<canvas id="canvas" width=200 height=150 class = "imageTaken"></canvas>
 								<div class="separator"></div>
 								<figcaption><h5>Your Image</h5></figcaption>
 							</figure>
@@ -127,13 +124,11 @@
 
 						<div class="service">
 							<figure>
-								<img src="https://lh3.googleusercontent.com/proxy/AHo6Mw-UISWW86loZJG7j2Vd2lJVyLe6C0vw2h6aXuAbJioQfqMFCRFsXtKg8PQPCxbbjrD2VY4zcgMDSAQ4Udbck82DHsN6Vw6wAnFLj5WJ1NWQBjFeDA1uSQC5C7ZmI6BnhTo_hg" alt="Spoon and Fork">
+								<img width = "25%" src="https://lh3.googleusercontent.com/proxy/AHo6Mw-UISWW86loZJG7j2Vd2lJVyLe6C0vw2h6aXuAbJioQfqMFCRFsXtKg8PQPCxbbjrD2VY4zcgMDSAQ4Udbck82DHsN6Vw6wAnFLj5WJ1NWQBjFeDA1uSQC5C7ZmI6BnhTo_hg" alt="Spoon and Fork">
 								<div class="separator"></div>
-								<figcaption><h5>Food Detected:</h5></figcaption>
-								<p>Whatever food is detected. </p>
+								<figcaption><h5 id = "food">Food Detected:</h5></figcaption>
 								<div class="separator"></div>
-								<figcaption><h5>Calories in Food:</h5></figcaption>
-								<p>Calories in food. </p>
+								<figcaption><h5 id = "caloriesfood">Calories in Food:</h5></figcaption>
 							</figure>
 							
 						</div>
@@ -144,11 +139,10 @@
 
 						<div class="service">
 							<figure>
-								<img src="https://image.flaticon.com/icons/png/128/1240/1240810.png" alt="Calorie Symbol">
+								<img width = "" src="https://image.flaticon.com/icons/png/128/1240/1240810.png" alt="Calorie Symbol">
 								<div class="separator"></div>
-								<figcaption><h5>Total Calorie Count:</h5></figcaption>
+								<figcaption><h5>Total Calorie Count:</h5><h5 id = "count">0</h5></figcaption>
 							</figure>
-							<p>Calorie count here. </p>
 						</div>
 
 					</div>
@@ -160,9 +154,6 @@
 		</section>
 
 		<section id="clients">
-
-			<!-- Section title -->
-			<h1 class="sr-only">Clients section</h1>
 			
 			<div class="container">
 
@@ -212,7 +203,7 @@
 			<div class="row">
 
 				<div class="col-sm-6">
-					<small class="copyright"> © <span id="year">2017</span> - <a href="https://mycalcount.netlify.app/">MyCalCount.tech</a> All Right Reserved</small>
+					<small class="copyright"> © <span id="year">2017</span> - <a href="https://mycalcount.netlify.app/">MyCalCount</a> All Right Reserved</small>
 				</div>
 
 			</div>
@@ -232,6 +223,21 @@
 	
 	<!-- Custom JS -->
 	<script src="js/custom.js"></script>
-
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+	<script>
+	var firebaseConfig = {
+    apiKey: "AIzaSyCBPrT7UshNiih2h1XB4a7lqKcVl3JsPpI",
+    authDomain: "mycalcount.firebaseapp.com",
+    projectId: "mycalcount",
+    storageBucket: "mycalcount.appspot.com",
+    messagingSenderId: "905267411150",
+    appId: "1:905267411150:web:b478eb5a9e1416a152789f"
+  	};
+    // Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	console.log(firebase);
+	</script>
 </body>
 </html>

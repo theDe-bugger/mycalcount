@@ -93,7 +93,7 @@ function updateCount(food){
     }
     else if (food=="Banana"){
         count += 105
-        document.getElementById("caloriesfood").innerHTML = 105
+        document.getElementById("caloriesfood").innerHTML = "Calories in item: " + 105
     }
     else if (food=="Strawberry"){
         count += 5
@@ -274,6 +274,6 @@ function updateCount(food){
     }
     
     document.getElementById("count").innerHTML = count
-    document.getElementById("food").innerHTML = food
+    document.getElementById("food").innerHTML = "Detected Food: " + food
     localStorage.setItem("caloriecount",count)
 }

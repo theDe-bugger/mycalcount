@@ -2,7 +2,7 @@
 ### Living a Healthy Lifestyle
 In the modern day, it’s observed that fitness is an important aspect of people's lives. There are individuals trying to reduce their weight, maintain their figure, or even gain weight to achieve a desired look. In any case, nutrition/food will surely be the most significant aspect to keep in mind. As a matter of fact, it is widely stated that “your diet is 80% responsible for the way you look. Exercise accounts for the other 20%.” Overall, being aware of what you are eating and its nutritional values proves to be a key aspect when it comes to living a healthy lifestyle. 
  
-### Keeping Track of Calories is Difficult
+### Keeping Track of Calories is Necessary
 We often see individuals attempting to achieve a desired body image or stay fit by reducing/increasing their calorie intake. For example, many people use mobile applications or organizers to note down their calories. However, many individuals tend to give up tracking calories as it presents to be a challenging issue. It has been stated that “those who count calories lose up to 4x more weight than those who do not count calories,” and it turns out that many individuals start off on the right path. However, 50% of people tend to give up tracking calories as it requires self-discipline and they get lazy. As of now, there is a strong need for a more convenient, simple and less time-consuming method of tracking calories.
 
 ## What it does

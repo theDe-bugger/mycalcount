@@ -40,6 +40,11 @@ function checkFood(){
     }
 }
 
+function reset(){
+    document.getElementById("count").innerHTML = "0"
+    localStorage.setItem("caloriecount","0")
+}
+
 function updateCount(food){
     var count = parseInt(document.getElementById("count").innerHTML)
     if (food == "Clementine"){

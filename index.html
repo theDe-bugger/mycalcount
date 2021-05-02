@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyCalCount</title>
-    <link rel="stylesheet" href="./assets/styles.css">
-    <script src = "./assets/image.js"></script>
-    <script src = "./assets/ml.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="MyCalCount">
+		<meta name="apple-mobile-web-app-title" content="MyCalCount">
+
+		<!-- Link to site manifest -->
+		<link rel="manifest" href="other/site.webmanifest">
+
+		<!-- Links to icons -->
+		<link rel="icon" type="image/png" href=".assets/images/logo.png">
+		<link rel="manifest" href="other/site.webmanifest">
+
+        <!-- Name of App -->
+        <title>MyCalCount</title>
+
+         <!-- Link to Stylesheets and JS files -->
+        <link rel="stylesheet" href="./assets/styles.css">
+        <script src = "./assets/image.js"></script>
+        <script src = "./assets/ml.js"></script>
 </head>
 
 <body onload="takePic()">
@@ -18,7 +33,7 @@
         <nav>
             <ul>
             <li class="nav__links"><button id="capture">Capture Image</button></li>
-            <li class="nav__links"><button>Reset Calories</button></li>
+            <li class="nav__links"><button onclick = "reset()">Reset Calories</button></li>
             <li class="nav__links"><a href="#">Daily Calorie Count: </a></li>
             <li class="nav__links"><a id = "count" href="#">0</a></li>            
             </ul>
@@ -26,19 +41,15 @@
         <a href="#"></a>
     </header>
     <div id = "imagesection">
-        <div id ="row">
-
-        <h2>Your Camera:</h2><video id="player" height="50%" width = "50%"controls autoplay></video>
+        <h2>Your Camera:</h2>
+        <video id="player" height="50%" width = "50%"controls autoplay class = "video"></video>
         </div>
     </div>
     <div id = "outputsection">
-        <div id ="row">
-        <h2>Your Image: </h2><canvas id="canvas" width=320 height=240 class = "imageTaken"></canvas>
-        </div>
-        
-        <div class = "row">
-        
-        
+        <div id ="content">
+            <div class = "output">
+                <h2>Your Image: </h2><canvas id="canvas" width=320 height=240 class = "imageTaken"></canvas>
+            </div>
         </div>
     </div>
     

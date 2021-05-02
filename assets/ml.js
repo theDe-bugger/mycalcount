@@ -269,11 +269,7 @@ function updateCount(food){
     else if (food=="Swiss roll"){
         count += 270
     }
-
-
-
-
-
+    
     document.getElementById("count").innerHTML = count
     localStorage.setItem("caloriecount",count)
 }

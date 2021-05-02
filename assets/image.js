@@ -17,14 +17,11 @@ captureButton.addEventListener('click', () => {
   canvasHTML = document.getElementById("canvas")
   sessionStorage.setItem("link",canvasHTML.toDataURL("image/png"))
   uploadImage(sessionStorage.getItem("link"))
-  
-  // Stop all video streams.
-  //player.srcObject.getVideoTracks().forEach(track => track.stop());
+
 });
 
 navigator.mediaDevices.getUserMedia(constraints)
   .then((stream) => {
-    // Attach the video stream to the video element and autoplay.
     player.srcObject = stream;
   });
 }

@@ -1,8 +1,9 @@
 function takePic(){
-  if (localStorage.getItem("caloriecount") === null) {
+  /*if (localStorage.getItem("caloriecount") === null) {
     localStorage.setItem("caloriecount","0")
   }
   document.getElementById("count").innerHTML = localStorage.getItem("caloriecount")
+  */
 const player = document.getElementById('player');
 const canvas = document.getElementById('canvas');
 const context = canvas.getContext('2d');

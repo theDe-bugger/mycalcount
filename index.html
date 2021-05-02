@@ -3,17 +3,19 @@
  * Author: GraphBerry
  * Author URL: http://graphberry.com
  * License: http://graphberry.com/pages/license
+ * Used Template for basic front-end
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Modus - Single Page Portfolio Theme | GraphBerry.com</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free singlepage web template created by GraphBerry">
-    <meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, PHP, Responsive, Mobile">
-    <meta name="author" content="GraphBerry.com"/>
+    <title>MyCalCount</title>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="MyCalCount">
+	<meta name="apple-mobile-web-app-title" content="MyCalCount">
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Fonts -->
@@ -23,13 +25,13 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="stylesheet" href="./assets/styles.css">-->
+    <script src = "./assets/image.js"></script>
+    <script src = "./assets/ml.js"></script>
 </head>
-<body>
+<body onload="takePic()">
 
 	<header id="header">
-		
-		<!-- Section title -->
-		<h1 class="sr-only">Modus | Home page</h1>
 		
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <!-- Section title -->
@@ -45,7 +47,7 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand smoothScroll" href="#home">
-		        <img alt="Modus" src="img/logo.png">
+		        <img alt="Modus" src="assets/images/banner.png">
 		      </a>
 		    </div>
 
@@ -53,10 +55,8 @@
 		    <div class="collapse navbar-collapse" id="main-navbar">
 		      <ul class="nav navbar-nav navbar-right">
 		        <li class="active"><a class="smoothScroll" href="#home">Home <span class="sr-only">(current)</span></a></li>
-		        <li><a class="smoothScroll" href="#portfolio">Portfolio</a></li>
-		        <li><a class="smoothScroll" href="#services">Services</a></li>
-		        <li><a class="smoothScroll" href="#clients">Clients</a></li>
-		        <li><a class="smoothScroll" href="#contact">Contact</a></li>
+		        <li><a class="smoothScroll" href="#services">Output</a></li>
+		        <li><a class="smoothScroll" href="#clients">More Info</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container -->
@@ -79,20 +79,17 @@
 					
 					<div class="row">
 
-						<div class="col-md-8 col-md-offset-2">
-							
-							<span class="h5">Design / Development / Photography</span class="h5">
-
-							<h2 class="h1">Creativity have new level</h2>
+						<div class="col-md-8 col-md-offset-2" style = "padding-top: 10em;">
+								<h2>Your Camera:</h2>
+								<video id="player" height="80%" width = "70%" controls autoplay></video>
 
 							<div class="cta-container">
 
-								<a href="#" class="btn btn-default">Preview</a>
-
-								<button href="#" class="btn btn-primary">Get theme</button>
-
+								<button id="capture" class = "btn btn-primary">Capture Image</button>
+								<button onclick= "reset()"class="btn btn-primary">Reset Calories</button>
+									<h2>Your Image: </h2><canvas id="canvas" width=320 height=240 class = "imageTaken"></canvas>
 							</div>
-
+							
 						</div>
 						
 					</div>
@@ -100,10 +97,6 @@
 				</div>
 
 			</div>
-
-			<a id="down-icon" class="down-icon smoothScroll" href="#history">
-				<img class="down-arrow" src="img/svg/down_icon.svg" alt="Down arrow">
-			</a>
 
 		</section>
 

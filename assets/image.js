@@ -10,7 +10,7 @@ const context = canvas.getContext('2d');
 const captureButton = document.getElementById('capture');
 
 const constraints = {
-  video: true,
+  video:true
 };
 
 captureButton.addEventListener('click', () => {

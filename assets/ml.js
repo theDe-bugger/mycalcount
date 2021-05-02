@@ -49,9 +49,11 @@ function updateCount(food){
     var count = parseInt(document.getElementById("count").innerHTML)
     if (food == "Clementine"){
         count += 35
+        document.getElementById("caloriesfood").innerHTML = 35
     }
     else if (food == "Orange"){
         count += 62
+        document.getElementById("caloriesfood").innerHTML = 35
     }
     else if (food == "Peach"){
         count += 67
@@ -91,6 +93,7 @@ function updateCount(food){
     }
     else if (food=="Banana"){
         count += 105
+        document.getElementById("caloriesfood").innerHTML = 105
     }
     else if (food=="Strawberry"){
         count += 5
@@ -271,5 +274,6 @@ function updateCount(food){
     }
     
     document.getElementById("count").innerHTML = count
+    document.getElementById("food").innerHTML = food
     localStorage.setItem("caloriecount",count)
 }

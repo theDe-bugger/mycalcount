@@ -9,7 +9,6 @@ We often see individuals attempting to achieve a desired body image or stay fit 
 MyCalCount was designed to provide users a unique and convenient method of counting their calories. This product allows the user to take a picture of their food item through the web app and analyze it for the calories. It revolutionizes the concept of calorie tracking so that the user does not have to spend unnecessary time manually inserting the items they consumed. A simple picture of the item can inform the user of the calories, saving them a lot of time.
 
 # DEMO:
-[!<img width="775" alt="Screenshot 2023-02-21 at 12 36 20 PM" src="https://user-images.githubusercontent.com/39176231/220418818-989f1670-c5f3-467a-96c8-f7dfe7fe3535.png">]
 
 [![MyCalCount](https://user-images.githubusercontent.com/39176231/220418206-988b0dff-32f5-40d0-bda1-a5dca9037d2d.png)](https://youtu.be/UvLWVx6n9mU)
 

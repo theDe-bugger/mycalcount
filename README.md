@@ -9,7 +9,8 @@ We often see individuals attempting to achieve a desired body image or stay fit 
 MyCalCount was designed to provide users a unique and convenient method of counting their calories. This product allows the user to take a picture of their food item through the web app and analyze it for the calories. It revolutionizes the concept of calorie tracking so that the user does not have to spend unnecessary time manually inserting the items they consumed. A simple picture of the item can inform the user of the calories, saving them a lot of time.
 
 # DEMO:
-https://youtu.be/UvLWVx6n9mU
+<img width="782" alt="Screenshot 2023-02-21 at 12 33 11 PM" src="https://user-images.githubusercontent.com/39176231/220418206-988b0dff-32f5-40d0-bda1-a5dca9037d2d.png"> (https://youtu.be/UvLWVx6n9mU)
+
 
 ## How to use it
 1. When the main site is opened (index.html or [link](https://mycalcount.netlify.app)), the user can take a picture of their food. This is captured on a canvas in the output section.
